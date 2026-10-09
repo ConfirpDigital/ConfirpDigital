@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirp Digital | Soluções Contábeis e Soluções em Tecnologia</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos Personalizados -->
+    <style>
+        :root {
+            --primary-color: #0b2545;
+            --secondary-color: #134074;
+            --accent-color: #0077b6;
+            --light-bg: #f8f9fa;
+            --text-muted: #6c757d;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+
+        .bg-primary-custom {
+            background-color: var(--primary-color);
+        }
+
+        .text-accent {
+            color: var(--accent-color);
+        }
+
+        /* Navbar */
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 100px 0 80px 0;
+        }
+
+        .hero h1 {
+            font-weight: 700;
+        }
+
+        /* Cards de Serviços */
+        .card-service {
+            border: none;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .card-service:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            background-color: rgba(0, 119, 182, 0.1);
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Badge CRC */
+        .badge-crc {
+            background-color: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--primary-color);
+            color: #adb5bd;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">
+                <i class="fa-solid fa-chart-line text-accent me-2"></i>Confirp Digital
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Atividades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#empresa">Dados Cadastrais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-7">
+                    <div class="badge-crc mb-3">
+                        <i class="fa-solid fa-award me-2 text-warning"></i>CRC Registrado: SP-047730/O
+                    </div>
+                    <h1 class="display-4 mb-3">Contabilidade Inteligente e Gestão Digital para o seu Negócio</h1>
+                    <p class="lead mb-4 opacity-75">Unimos a tradição e a precisão da contabilidade com a eficiência da tecnologia para acelerar o crescimento da sua empresa.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contato" class="btn btn-primary btn-lg px-4" style="background-color: var(--accent-color); border:none;">Fale Conosco</a>
+                        <a href="tel:1150783060" class="btn btn-outline-light btn-lg px-4"><i class="fa-solid fa-phone me-2"></i>(11) 5078-3060</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="p-4 rounded-3 bg-white text-dark shadow-lg">
+                        <i class="fa-solid fa-shield-halved fa-3x text-accent mb-3"></i>
+                        <h4 class="fw-bold">Empresa Regularizada</h4>
+                        <p class="text-muted small">Atuação ética, segura e transparente sob o CNPJ 47.964.657/0001-32.</p>
+                        <hr>
+                        <div class="text-start">
+                            <p class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Situação: <strong>Ativa</strong></p>
+                            <p class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Tipo: <strong>Matriz</strong></p>
+                            <p class="mb-0"><i class="fa-solid fa-check text-success me-2"></i>Sede: <strong>São Paulo - SP</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-6">
+                    <h6 class="text-primary text-uppercase fw-bold">Sobre a Confirp Digital</h6>
+                    <h2 class="fw-bold mb-3">Sua parceira estratégica em serviços contábeis e tecnológicos</h2>
+                    <p class="text-muted">A <strong>Confirp Digital LTDA</strong> foi fundada para transformar a forma como as empresas lidam com suas obrigações contábeis e gestão de informação. Combinando excelência técnica com inovação digital, entregamos soluções precisas e personalizadas.</p>
+                    <p class="text-muted">Sob a liderança dos sócios-administradores <strong>Reinaldo Aparecido Domingos</strong> e <strong>Richard Alex Domingos</strong>, juntamente com a administração de <strong>Thiago Amadeo Barbosa</strong>, mantemos o compromisso contínuo com a transparência e conformidade fiscal.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-3 bg-light rounded text-center">
+                                <h3 class="fw-bold text-accent mb-1">+4 Anos</h3>
+                                <p class="text-muted small mb-0">De Experiência no Mercado</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-light rounded text-center">
+                                <h3 class="fw-bold text-accent mb-1">100%</h3>
+                                <p class="text-muted small mb-0">Conformidade Legal e Fiscal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atividades / Serviços -->
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h6 class="text-primary text-uppercase fw-bold">O que fazemos</h6>
+                <h2 class="fw-bold">Nossas Áreas de Atuação</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Atividade Principal -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="card card-service h-100 p-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                        <span class="badge bg-primary mb-2 w-auto align-self-start">Atividade Principal</span>
+                        <h4 class="fw-bold">Atividades de Contabilidade</h4>
+                        <p class="text-muted small">CNAE: 69.20-6-01</p>
+                        <p class="text-muted">Gestão contábil completa, balanços, relatórios financeiros, escrituração fiscal e assessoria especializada para garantir a conformidade da sua empresa com a legislação vigente.</p>
+                    </div>
+                </div>
+                <!-- Atividade Secundária -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="card card-service h-100 p-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <span class="badge bg-secondary mb-2 w-auto align-self-start">Atividade Secundária</span>
+                        <h4 class="fw-bold">Portais e Serviços de Informação</h4>
+                        <p class="text-muted small">CNAE: 63.19-4-00</p>
+                        <p class="text-muted">Provedores de conteúdo, portais digitais e serviços de informação na internet, aproximando a tecnologia e o acesso a dados estratégicos da rotina do seu negócio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dados Institucionais -->
+    <section id="empresa" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h6 class="text-primary text-uppercase fw-bold">Transparência</h6>
+                <h2 class="fw-bold">Informações Cadastrais da Empresa</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="p-3 border rounded h-100">
+                        <p class="text-muted mb-1 small">Razão Social</p>
+                        <h6>Confirp Digital LTDA</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 border rounded h-100">
+                        <p class="text-muted mb-1 small">CNPJ</p>
+                        <h6>47.964.657/0001-32</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 border rounded h-100">
+                        <p class="text-muted mb-1 small">Registro Profissional (CRC)</p>
+                        <h6>SP-047730/O</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 border rounded h-100">
+                        <p class="text-muted mb-1 small">Natureza Jurídica</p>
+                        <h6>Sociedade Empresária Limitada</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 border rounded h-100">
+                        <p class="text-muted mb-1 small">Porte</p>
+                        <h6>Micro Empresa</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 border rounded h-100">
+                        <p class="text-muted mb-1 small">Data de Abertura</p>
+                        <h6>15/09/2022</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato e Localização -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Entre em Contato</h2>
+                    <p class="text-muted mb-4">Fale com a nossa equipe especializada para tirar dúvidas ou solicitar uma proposta comercial personalizada.</p>
+                    
+                    <div class="d-flex mb-3">
+                        <div class="me-3 text-accent fs-4"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Endereço</h6>
+                            <p class="text-muted mb-0">Rua Alba, 96 - Andar 5, Vila Parque Jabaquara<br>São Paulo - SP, CEP: 04346-000</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-3">
+                        <div class="me-3 text-accent fs-4"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Telefone</h6>
+                            <p class="text-muted mb-0"><a href="tel:1150783060" class="text-decoration-none text-muted">(11) 5078-3060</a></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="me-3 text-accent fs-4"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">E-mail</h6>
+                            <p class="text-muted mb-0"><a href="mailto:leticia@tmaenergiasolar.com" class="text-decoration-none text-muted">leticia@tmaenergiasolar.com</a></p>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.google.com/?q=Rua+Alba,+96,+Vila+Parque+Jabaquara,+Sao+Paulo" target="_blank" class="btn btn-outline-primary">
+                        <i class="fa-solid fa-map-location-dot me-2"></i>Abrir no Google Maps
+                    </a>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <div class="col-lg-6">
+                    <div class="card p-4 shadow-sm border-0">
+                        <h4 class="fw-bold mb-3">Envie uma Mensagem</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Nome Completo</label>
+                                <input type="text" class="form-control" placeholder="Digite seu nome">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">E-mail</label>
+                                <input type="email" class="form-control" placeholder="seu@email.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Telefone / WhatsApp</label>
+                                <input type="tel" class="form-control" placeholder="(11) 99999-9999">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mensagem</label>
+                                <textarea class="form-control" rows="4" placeholder="Como podemos ajudar sua empresa?"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary w-100" style="background-color: var(--primary-color);">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="py-4 text-center text-md-start">
+        <div class="container">
+            <div class="row gy-3 align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 small">&copy; Confirp Digital LTDA. Todos os direitos reservados.</p>
+                    <p class="mb-0 small text-muted">CNPJ: 47.964.657/0001-32 | CRC SP-047730/O</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-muted">Endereço de Correspondência: Rua Alba 96, Andar 5 - Vila Parque Jabaquara, São Paulo - SP</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>
